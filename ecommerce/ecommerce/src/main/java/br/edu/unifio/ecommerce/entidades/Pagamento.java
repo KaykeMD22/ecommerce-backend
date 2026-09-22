@@ -1,4 +1,3 @@
-
 package br.edu.unifio.ecommerce.entidades;
 
 import java.math.BigDecimal;
@@ -29,4 +28,3 @@ public class Pagamento {
     @OneToOne
     private Pedido pedido;
 }
-

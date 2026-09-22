@@ -30,6 +30,6 @@ public class Pedido {
     @ManyToOne
     private Cliente cliente;
 
-    @OneToOne
+    @OneToOne(mappedBy = "pedido")
     private Pagamento pagamento;
 }
