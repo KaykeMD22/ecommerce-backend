@@ -17,6 +17,10 @@ import lombok.Setter;
 @Entity
 public class Pedido {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
     private LocalDateTime data;
 
     private String status;
@@ -28,8 +32,4 @@ public class Pedido {
 
     @OneToOne
     private Pagamento pagamento;
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
 }

@@ -11,11 +11,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Categoria {
+
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Short id;
 
     private String nome;
-
     private String descricao;
 }
